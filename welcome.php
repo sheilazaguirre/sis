@@ -6,17 +6,34 @@
 		$emailAddress = $_POST['email'];
 		$password = $_POST['pwd'];
 		$birthDate = $_POST['bday'];
-
-		echo "<b>Welcome, " . $lastName . " " . $firstName . "!</b><br/><br/>" . 
-		"<b>Your ID number is: </b>" . $studentNo . "!</br>" . 
-		"<b>Your Email Address is: </b>" . $emailAddress . "! </br>" .
-		"<b>Your Password is: </b>". $password . "! </br>" .
-		"<b>Your Birthday is: </b>". $birthDate . "! </br><br/>" . 
-		"<b>The Time is: </b>" . date('c');
-
 	} 
 	else {
 		header('location: register.php');
 
 	}
 ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+	</head>
+	<body style="height:100%">
+		<div class="container">
+			<div style="height:100vh; display: flex;justify-content: center;align-items: center;">
+				<div class="jumbotron" style="text-align:center">
+					<h1>Welcome, <?=$lastName?> <?=$firstName?>! </h1>
+					<div class="row">
+						<div class="col-xs-6" style="text-align:left; font-size:120%">
+							<?=$studentNo?><br/>
+							<?=$emailAddress?><br/>
+							<?=$password?><br/>
+							<?=$birthDate?><br/>
+							<?=date('c')?><br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>

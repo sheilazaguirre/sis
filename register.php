@@ -24,7 +24,7 @@
 			<h1 class="text-center">Student Registration</h1>
 			<div class="col-lg-offset-3 col-lg-6">
 				<div class="well">
-					<form method="GET" action="welcome.php"
+					<form method="POST" action="welcome.php"
 						class="form-horizontal">
 						<div class="form-group">
 							<label class="control-label col-lg-4">
@@ -76,7 +76,7 @@
 						</div>
 						<div class="form-group">
 							<div class="col-lg-offset-4 col-lg-8">
-								<button name="register"
+								<button name="register" type="submit"
 									class="btn btn-success">
 									Register
 								</button>
