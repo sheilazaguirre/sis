@@ -63,7 +63,7 @@
 								Password
 							</label>
 							<div class="col-lg-8">
-								<input type="text" name="pwd" class="form-control" required />
+								<input type="password" name="pwd" class="form-control" required />
 							</div>
 						</div>
 						<div class="form-group">
