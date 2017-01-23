@@ -8,7 +8,7 @@
 		$birthDate = $_POST['bday'];
 	} 
 	else {
-		header('location: register.php');
+		header('location: index.php');
 
 	}
 ?>
@@ -37,3 +37,4 @@
 			</div>
 		</div>
 	</body>
+</html>
