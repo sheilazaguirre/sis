@@ -195,11 +195,6 @@
                     	</ul>				
 					</div>
 				</div>
-
-				<div class="row align-center copyright">
-					<div class="col-sm-12"><p>Copyright &copy; Amoeba</p>
-                    </div>
-				</div>
 			</div>
 
 		</section>

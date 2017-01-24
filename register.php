@@ -14,114 +14,94 @@
 
 ?>
 <!DOCTYPE html>
-	<html >
-		<head>
-  			<meta charset="UTF-8">
-  			<title>Student Registration</title>
-  			<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-  			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
 
   
-      		<link rel="stylesheet" href="css/style.css">
-		</head>
+</head>
 
-		<body>
-  			<div class="form">
-      
-      			<ul class="tab-group">
-        			<li class="tab active"><a href="#signup">Sign Up</a></li>
-        			<li class="tab"><a href="#login">Log In</a></li>
-      			</ul>
-      
-      			<div class="tab-content">
-        			<div id="signup">   
-          				<h1>Student Registration</h1>
-          
-          				<form method="POST" action="welcome.php"
-            			class="form-horizontal">
-            				<div class="field-wrap">
-              					<label>
-                					Student ID <span class="req">*</span>
-              					</label>
-              					<input type="text" name="sid" required />
-            				</div>
+<body>
+  
+<html lang="en">
+<head>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <meta charset="utf-8">
+    <title>Flat Login</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
 
-          					<div class="top-row">
-            					<div class="field-wrap">
-              						<label>
-                						Last Name<span class="req">*</span>
-              						</label>
-              						<input type="text" name="ln" required />
-            					</div>
+    <div class="container">
+        <div class="flat-form">
+            <ul class="tabs">
+                <li>
+                    <a href="#register" class="active">Register</a>
+                </li>
+                <li>
+                    <a href="#login" class="active">Login</a>
+                </li>
+            </ul>
+            <div id="register" class="form-action show">
+                <h1>SIGN UP</h1>
+                <form method="POST" action="welcome.php"
+                  class="form-horizontal">
+                    <ul>
+                        <li>
+                            <input type="text" name="sid" placeholder="Student ID" required/>
+                        </li>
+                        <li>
+                            <input type="text" name="ln" placeholder="Last Name" required/>
+                        </li>
+                        <li>
+                            <input type="text" name="fn" placeholder="First Name" required/>
+                        </li>
+                        <li>
+                            <input type="text" name="email" placeholder="Email Address" required/>
 
-            					<div class="field-wrap">
-              						<label>
-                						First Name<span class="req">*</span>
-              						</label>
-              						<input type="text" name="fn" required />
-            					</div>
-          					</div>
+                        </li>
+                        <li>
+                            <input type="password" name="pwd" placeholder="Password" required/>
+                        </li>
+                        <label>
+                          BirthDate: 
+                        </label>
+                            <input type="date" name="bday" placeholder="BirthDate" required /><hr/>
 
-          					<div class="field-wrap">
-            					<label>
-              						Email Address<span class="req">*</span>
-            					</label>
-            					<input type="email" name="email" required />
-          					</div>
-          
-          					<div class="field-wrap">
-            					<label>
-              						Password<span class="req">*</span>
-            					</label>
-            					<input type="password" name="pwd" required />
-          					</div>
+                        <button type="submit" name="register" class="button button-block" />REGISTER</button>
+                    </ul>
+                </form>
+            </div>
 
-          					<div class="field-wrap">
-            					<label>
-              						Birhtdate<span class="req">*</span>
-            					</label>
-            					<input type="date" name="bday" required />
-          					</div>
-          
-          					<button type="submit" name="register" class="button button-block"/>REGISTER</button>
-          
-          				</form>
-
-        			</div>
-
-        
-        <div id="login">   
-          <h1>Welcome Back!</h1>
-          
-          <form action="/" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Log In</button>
-          
-          </form>
-
+            <div id="login" class="form-action hide">
+                <h1>Login on webapp</h1>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Username" />
+                        </li>
+                        <li>
+                            <input type="password" placeholder="Password" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Login" class="button" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </div>
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+    </div>
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</body>
+</html>
+  
     <script src="js/index.js"></script>
 
 </body>
